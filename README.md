@@ -35,17 +35,43 @@ This project aims to build a desktop voice assistant similar to *Jarvis*, capabl
 ## 📂 Project Structure
 
 ```
-
 Jarvis_AI/
 │
-├── engine/              # Core logic and command processing
-├── www/                 # Web or UI related resources
-├── main.py              # Main entry point
-├── run.py               # Alternate execution script
-├── requirements.txt     # Project dependencies
-├── device.bat           # Windows batch execution file
-└── README.md            # Project documentation
-
+├── __pycache__/                 # Python cache files
+│
+├── .vscode/                     # VS Code workspace settings
+│
+├── engine/
+│   ├── __pycache__/             # Engine module cache
+│   ├── command.py               # Command parsing & execution logic
+│   ├── config.py                # Configuration settings & constants
+│   ├── cookies.json             # Stored cookies (web/session handling)
+│   ├── db.py                    # Database operations & helpers
+│   ├── features.py              # Core assistant features & actions
+│   ├── helper.py                # Utility/helper functions
+│   └── envdynamo                # Environment/config related file
+│
+├── www/
+│   ├── assets/
+│   │   ├── audio/
+│   │   │   └── start_sound.mp3  # Startup sound for the assistant
+│   │   ├── img/                 # Images/icons used in UI
+│   │   └── vendors/             # Third-party frontend libraries
+│   │
+│   ├── cdns.txt                 # CDN references for frontend assets
+│   ├── controller.js            # Frontend logic controller
+│   ├── index.html               # Web UI entry point
+│   ├── main.js                  # Main frontend JavaScript logic
+│   ├── script.js                # Supporting JS functions
+│   └── styles.css               # UI styling (CSS)
+│
+├── .gitignore                   # Git ignored files/folders
+├── contacts.csv                 # Stored contacts data
+├── device.bat                   # Windows batch file to start the assistant
+├── dynamo.db                    # SQLite database file
+├── main.py                      # Main application entry point
+├── run.py                       # Alternate runner / development launcher
+└── README.md                    # Project documentation (you’re writing this)
 ````
 
 ---
