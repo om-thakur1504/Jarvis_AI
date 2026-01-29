@@ -1,82 +1,80 @@
-# Jarvis_AI 🤖
+# 🤖 DynamoAI (Jarvis_AI)
 
-Jarvis_AI is a Python-based **AI voice assistant** designed to perform daily tasks through **voice commands**. It uses speech recognition and text-to-speech technologies to interact with users and automate system operations, web searches, and information retrieval.
-
----
-
-## 📌 Project Overview
-
-This project aims to build a desktop voice assistant similar to *Jarvis*, capable of understanding user commands and executing predefined actions. It enhances productivity by enabling hands-free interaction with the system.
+DynamoAI is a personal AI assistant inspired by **Jarvis**, capable of executing commands, automating tasks, interacting through a desktop-based UI, managing data, and providing intelligent responses.  
+The project combines a **Python backend** with a **browser-based frontend**, making it lightweight, modular, and cross-platform.
 
 ---
 
 ## ✨ Features
 
-- Voice-based user interaction  
-- Speech recognition (Speech-to-Text)  
-- Text-to-speech responses  
-- System automation (open applications, files, folders)  
-- Web search and information retrieval  
-- Weather and basic utility commands  
-- Modular and easily extendable architecture  
+- 🎙️ Voice-based AI assistant
+- 🧠 Command parsing and intelligent task execution
+- 🌐 Web-based user interface
+- 🗄️ SQLite database for persistent storage
+- 🔊 Audio feedback on startup
+- 📇 Contact management
+- ⚙️ Modular and extensible architecture
+- 🖥️ Works on **Windows, Linux, and macOS**
 
 ---
 
-## 🛠️ Technologies Used
+## 🧩 Tech Stack
 
-- **Python**
-- SpeechRecognition
-- pyttsx3 (Text-to-Speech)
-- OS & System libraries
-- Web scraping libraries (if enabled)
+**Backend**
+- Python 3.x
+- SQLite
+- Modular engine-based architecture
+
+**Frontend**
+- HTML5
+- CSS3
+- JavaScript
+- Audio & asset management
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Jarvis_AI/
-│
-├── __pycache__/                 # Python cache files
-│
-├── .vscode/                     # VS Code workspace settings
+
+DynamoAI/
 │
 ├── engine/
-│   ├── __pycache__/             # Engine module cache
-│   ├── command.py               # Command parsing & execution logic
-│   ├── config.py                # Configuration settings & constants
-│   ├── cookies.json             # Stored cookies (web/session handling)
-│   ├── db.py                    # Database operations & helpers
-│   ├── features.py              # Core assistant features & actions
-│   ├── helper.py                # Utility/helper functions
-│   └── envdynamo                # Environment/config related file
+│   ├── command.py        # Command parsing & execution
+│   ├── config.py         # Configuration & constants
+│   ├── cookies.json      # Stored session cookies
+│   ├── db.py             # Database operations
+│   ├── features.py       # Core assistant features
+│   ├── helper.py         # Utility/helper functions
+│   └── envdynamo         # Environment configuration
 │
 ├── www/
 │   ├── assets/
 │   │   ├── audio/
-│   │   │   └── start_sound.mp3  # Startup sound for the assistant
-│   │   ├── img/                 # Images/icons used in UI
-│   │   └── vendors/             # Third-party frontend libraries
+│   │   │   └── start_sound.mp3
+│   │   ├── img/
+│   │   └── vendors/
 │   │
-│   ├── cdns.txt                 # CDN references for frontend assets
-│   ├── controller.js            # Frontend logic controller
-│   ├── index.html               # Web UI entry point
-│   ├── main.js                  # Main frontend JavaScript logic
-│   ├── script.js                # Supporting JS functions
-│   └── styles.css               # UI styling (CSS)
+│   ├── cdns.txt
+│   ├── controller.js
+│   ├── index.html
+│   ├── main.js
+│   ├── script.js
+│   └── styles.css
 │
-├── .gitignore                   # Git ignored files/folders
-├── contacts.csv                 # Stored contacts data
-├── device.bat                   # Windows batch file to start the assistant
-├── dynamo.db                    # SQLite database file
-├── main.py                      # Main application entry point
-├── run.py                       # Alternate runner / development launcher
-└── README.md                    # Project documentation (you’re writing this)
+├── contacts.csv          # Contacts data
+├── dynamo.db             # SQLite database
+├── device.bat            # Windows launcher
+├── main.py               # Main entry point
+├── run.py                # Alternate runner
+├── .gitignore
+└── README.md
+
 ````
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 Installation
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -84,76 +82,128 @@ git clone https://github.com/om-thakur1504/Jarvis_AI.git
 cd Jarvis_AI
 ````
 
-### 2️⃣ Install Dependencies
+---
 
-Ensure **Python 3.7 or higher** is installed.
+## 🧪 Environment Setup
+
+### 🔹 Python Version
+
+Ensure **Python 3.8 or higher** is installed.
+
+Check version:
+
+```bash
+python --version
+```
+
+---
+
+## 📦 Install Dependencies
+
+> Install dependencies using `requirements.txt` (recommended)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Assistant
+---
+
+## ▶️ Running the Project
+
+### 🪟 Windows
+
+**Option 1: Using Python**
 
 ```bash
 python main.py
 ```
 
-or
+**Option 2: Using Batch File**
 
 ```bash
-python run.py
+device.bat
 ```
 
 ---
 
-## 🎙️ Usage
+### 🐧 Linux
 
-After starting the program, the assistant listens for voice commands.
+```bash
+python3 main.py
+```
 
-Example commands:
+If needed:
 
-* “Open Chrome”
-* “What is the time?”
-* “Search Python tutorials”
-* “Tell me the weather”
-
-You can customize or add new commands by modifying the core logic inside the `engine` directory.
-
----
-
-## 🔧 Customization
-
-* Add new commands in the command handler module
-* Integrate APIs for advanced features (news, weather, AI models)
-* Improve NLP logic for better intent recognition
+```bash
+chmod +x main.py
+```
 
 ---
 
-## 🤝 Contributing
+### 🍎 macOS
 
-Contributions are welcome!
+```bash
+python3 main.py
+```
 
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
+> If `python3` is not found, install via Homebrew:
+
+```bash
+brew install python
+```
 
 ---
 
-## 📜 License
+## 🗄️ Database
 
-This project is licensed under the **MIT License**.
-You are free to use, modify, and distribute this project.
+* Uses **SQLite**
+* Database file: `dynamo.db`
+* Managed via `engine/db.py`
+
+---
+
+## 🧠 Customization
+
+* Add new commands in `engine/command.py`
+* Extend assistant abilities in `engine/features.py`
+* Modify UI in `www/`
+* Update configuration via `engine/config.py`
+
+---
+
+## 🔐 Security Notes
+
+* Do not expose cookies or API keys publicly
+* Use `.gitignore` for sensitive files
+* Avoid committing `cookies.json` with real sessions
+
+---
+
+## 🛠️ Troubleshooting
+
+* Ensure microphone permissions are enabled
+* Check Python path if command fails
+* Verify all dependencies are installed correctly
+
+---
+
+## 📌 Future Enhancements
+
+* Hotword detection
+* Face recognition authentication
+* Mobile automation integration
+* Cloud-based AI processing
+* Multi-language support
 
 ---
 
 ## 👨‍💻 Author
 
 **Om Thakur**
-GitHub: [@om-thakur1504](https://github.com/om-thakur1504)
+GitHub: [om-thakur1504](https://github.com/om-thakur1504)
 
 ---
 
-## ⭐ Support
+## 📜 License
 
-If you like this project, consider giving it a ⭐ on GitHub!
+This project is licensed under the **MIT License**.
