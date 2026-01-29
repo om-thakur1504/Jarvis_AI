@@ -1,7 +1,8 @@
 # 🤖 DynamoAI (Jarvis_AI)
 
-DynamoAI is a personal AI assistant inspired by **Jarvis**, capable of executing commands, automating tasks, interacting through a desktop-based UI, managing data, and providing intelligent responses.  
+DynamoAI is a personal AI assistant inspired by **Jarvis**, capable of executing commands, automating tasks, interacting through a web-based UI, managing data, and providing intelligent responses.  
 The project combines a **Python backend** with a **browser-based frontend**, making it lightweight, modular, and cross-platform.
+Note: It's not at all a Website, it's Desktop App which is consist of web-based UI.
 
 ---
 
