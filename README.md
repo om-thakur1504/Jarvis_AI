@@ -131,17 +131,3 @@ GitHub: [@om-thakur1504](https://github.com/om-thakur1504)
 ## ⭐ Support
 
 If you like this project, consider giving it a ⭐ on GitHub!
-
-```
-
----
-
-If you want next:
-- ✅ **README with screenshots**
-- ✅ **Badges (Python, License, Stars)**
-- ✅ **More technical README (for recruiters)**
-- ✅ **Beginner-friendly README**
-
-Just tell me 👍
-::contentReference[oaicite:0]{index=0}
-```
